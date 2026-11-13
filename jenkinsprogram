@@ -3,15 +3,15 @@ pipeline {
     agent any
 
     stages {
-        stage('compile') {
+        stage('Compile Java') {
             steps {
-                sh 'javac addition.java'
+                sh 'javac --release 17 HelloWorld.java'
             }
         }
 
-        stage('run') {
+        stage('Run Java') {
             steps {
-                sh 'java addition'
+                sh 'java HelloWorld'
             }
         }
     }
