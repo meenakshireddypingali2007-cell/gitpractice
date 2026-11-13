@@ -1,3 +1,4 @@
+
 public class Addition {
     public static void main(String[] args) {
         int a = 10;
@@ -5,6 +6,6 @@ public class Addition {
 
         int sum = a + b;
 
-        System.out.println("sum = " + sum);
+        System.out.println("Sum = " + sum);
     }
 }
